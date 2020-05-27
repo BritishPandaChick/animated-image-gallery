@@ -10,3 +10,5 @@ This code is based on starter code from Eduonix. Therefore I will not be accepti
 ## Acknowledgements
 * Eduonix 
 * Udemy
+* Quicksand
+* FancyBox
