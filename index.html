@@ -3,17 +3,15 @@
     <head>
         <title>Animated Image Gallery</title>
         <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/fancybox/thumbs.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/fancybox/share.css" type="tetxt/css" media="screen" />
     </head>
     <body>
         <header>
             <!-- container -->
             <div class="container">
-                <nav id="navbar">
-                    <a href="#">All Items</a>
-                    <a href="#">Print Design</a>
-                    <a href="#">Web Design</a>
-                    <a href="#">Logo Design</a>
-                </nav>
+                <nav id="navbar"></nav>
             </div>
         </header>
 
@@ -61,7 +59,18 @@
         <script src="js/jquery.js" type="text/javascript"></script>
         <!-- Quicksand Plugin -->
         <script src="js/jquery.quicksand.js" type="text/javascript"></script>
+        <!-- Fancybox JS-->
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/fancybox/share.js"></script>
+        <script type="text/javascript" src="js/fancybox/media.js"></script>
+        <script type="text/javascript" src="js/fancybox/thumbs.js"></script>
         <!-- Include Custome JS -->
         <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            //Call FancyBox
+            $(document).ready(function(){
+                $('.fancybox').fancybox();
+            });
+        </script>
     </body>
 </html>

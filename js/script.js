@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var items = $('#gallery li'),
-        itemsByTags = [];
+        itemsByTags = {};
 
     //Loop through tags 
     items.each(function(i){
@@ -49,7 +49,7 @@ $(document).ready(function(){
     //Create the lists 
     function createList(text, items){
         //Create empty unordered list 
-        var ul = $('<ul>', ('class':'hidden'));
+        var ul = $('<ul>', {'class':'hidden'});
 
         $.each(items, function(){
             $(this).clone().appendTo(ul);
@@ -61,9 +61,9 @@ $(document).ready(function(){
         //Create menu item 
         var a = $('<a>', {
             html: text,
-            href="#",
+            href:"#",
             data:{list:ul}
-        });
+        }).appendTo('#navbar');
     }
 
 });
